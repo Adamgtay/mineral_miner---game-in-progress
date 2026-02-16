@@ -14,13 +14,14 @@ TICK = 60
 PLAYER_IMAGE_ORIG = pygame.image.load(
     "images/player_instance.png").convert_alpha()  # should point UP in image
 MAP_IMAGE = pygame.image.load("images/map.png").convert()
+map_width, map_height = MAP_IMAGE.get_size()
 
 # --- Player & map state ---
 player_angle = 180             # degrees
 PLAYER_ROT_SPEED = 3         # degrees per frame
 PLAYER_SPEED = 5             # pixels per frame
 
-map_x, map_y = 0.0, 0.0     # map offset
+map_x, map_y = 0-(map_width/2), 0-(map_height/2)    # map offset
 
 # --- Game loop ---
 running = True
