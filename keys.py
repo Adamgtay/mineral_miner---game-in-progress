@@ -2,7 +2,7 @@ import pygame
 import math
 
 
-def key_inputs(player_rotation_speed, player_speed, player_angle, cannon_angle, cannon_rotation_speed, current_map_x, current_map_y):
+def key_inputs_movement(player_rotation_speed, player_speed, player_angle, cannon_angle, cannon_rotation_speed, current_map_x, current_map_y):
     # --- Key input ---
     keys = pygame.key.get_pressed()
 
